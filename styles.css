@@ -1,0 +1,89 @@
+body {
+    font-family: 'Georgia', serif; /* Elegant font for a vintage feel */
+    background: linear-gradient(to bottom right, #796D94, #DE9B83, #F6E5C7, #87C4BC, #755B5E); /* Custom gradient */
+    color: #333; /* Dark text for readability */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #4b0082; /* Indigo for headings */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    margin-bottom: 20px;
+}
+
+#message, #dayContainer, #downloadContainer {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 90%;
+    max-width: 600px; /* Max width for better control */
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #4b0082; /* Border color matching the theme */
+    border-radius: 5px;
+    font-size: 16px;
+    width: calc(100% - 24px); /* Full width minus padding */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4b0082; /* Indigo button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #800080; /* Lighter purple on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+/* PDF download button styling */
+#downloadPDF {
+    margin-top: 20px;
+    background-color: #4b0082; /* Indigo */
+}
+
+#downloadPDF:hover {
+    background-color: #800080; /* Lighter purple on hover */
+}
+
+/* Neon effect for title input */
+#weekTitle {
+    transition: box-shadow 0.3s ease;
+}
+
+#weekTitle:focus {
+    box-shadow: 0 0 10px #800080; /* Neon purple glow on focus */
+}
+
+.fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Change duration to 0.5 seconds */
+}
+
+.fade-in {
+    opacity: 1; /* Fully visible */
+}
+
+.fade-out {
+    opacity: 0; /* Fully transparent */
+}
